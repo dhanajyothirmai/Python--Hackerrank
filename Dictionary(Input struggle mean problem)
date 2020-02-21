@@ -1,0 +1,9 @@
+from statistics import mean
+a={}
+n=int(input())
+for i in range(n):
+  name=input().split()
+  a[name[0]]=[int(i) for i in name[1:len(name)]]
+
+
+print("%.2f" % float(mean(a[input()])))
